@@ -38,5 +38,6 @@ class Song
         hash[x] = 1
       end
     end
+    hash
   end
 end
