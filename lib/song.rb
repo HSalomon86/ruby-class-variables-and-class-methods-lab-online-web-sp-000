@@ -26,5 +26,17 @@ class Song
   def self.count
     @@count
   end
-
+  def self.genre_count
+    hash = {}
+    @@genres.each do |x|
+      if hash.empty?
+        hash[x] = 1
+      elsif 
+        hash.key?(x)
+          hash[x] += 1
+      elsif !hash.key?(x)
+        hash[x] = 1
+      end
+    end
+  end
 end
