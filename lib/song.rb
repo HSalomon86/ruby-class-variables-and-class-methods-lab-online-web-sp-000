@@ -31,7 +31,7 @@ class Song
     @@genres.each do |x|
       if hash.empty?
         hash[x] = 1
-      elsif 
+      elsif
         hash.key?(x)
           hash[x] += 1
       elsif !hash.key?(x)
