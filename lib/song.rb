@@ -10,14 +10,13 @@ class Song
 
     @@count += 1
 
-      if !@@genres.include?(genre)
-        @@genres << genre
-      end
+    @@genres << genre
+
 
   end
 
   def self.genres
-    @@genres
+    genres = @@genres.uniq
   end
 
   def self.count
